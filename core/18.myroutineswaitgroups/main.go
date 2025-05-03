@@ -25,6 +25,7 @@ func main() {
 		wg.Add(1)
 	}
 
+	fmt.Println(":::: Waiting for routines to finish")
 	wg.Wait()
 }
 

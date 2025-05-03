@@ -13,10 +13,10 @@ var MyGlobalIntWithImplicitType = 123 // public
 const myGlobalPrivateConst string = "My global private const"
 const MyGlobalPublicConst string = "My global public const"
 
-const myGlobalPrivateConstWithImplicitType string = "My global private const with implicit type"
+const myGlobalPrivateConstWithImplicitType = "My global private const with implicit type"
 const MyGlobalPublicConstWithImplicitType = "My global private const with implicit type"
 
-//myStrGlobalVar := "Walrus operator is not allowed here" // walrus operator is only allowed within a method. Not in global scope.
+//myStrGlobalVar := "Walrus operator is not allowed here" // walrus operator is only allowed within a method/function. Not in global scope.
 
 func main() {
 

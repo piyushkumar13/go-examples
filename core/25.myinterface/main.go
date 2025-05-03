@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 /*
-	Go uses duck typing means if there is a struct which has same methods as declared in interface then that struct is the
+Go uses duck typing means if there is a struct which has same methods as declared in interface then that struct is the
 
 implementation of interface. Basically, if struct can walk like a duck and quack like a duck, then it's a duck.
 */

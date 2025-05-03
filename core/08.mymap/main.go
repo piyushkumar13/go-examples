@@ -43,8 +43,8 @@ func main() {
 	myDetails3Val2, isExists := myDetails3["firstName"]
 	fmt.Printf("Value of firstName is %v and isExists=%v \n", myDetails3Val2, isExists)
 
-	_, isLastNameExists := myDetails3["lastName"]
-	fmt.Printf("Value of lastName isExists=%v \n", isLastNameExists)
+	myDetails3Val3, isLastNameExists := myDetails3["lastName"]
+	fmt.Printf("Value of lastName isExists=%v and isValueEmpty=%v\n", isLastNameExists, (myDetails3Val3 == ""))
 
 	// looping maps
 

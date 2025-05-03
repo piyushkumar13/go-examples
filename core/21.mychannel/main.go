@@ -9,7 +9,19 @@ import (
 For channels when we are producing into the channel, there should be a listener for it else we will get an error.
 
 	If we are putting two values in the channel, then the listener should be popping out these two values else we will get error.
-	Or we can use buffered channel if we dont want to get error if poping statement is less
+	Or we can use buffered channel if we dont want to get error if poping statement is less.
+
+	Buffered channel (make(chan int, 2)) - 2 here is the buffer saying channel can accept two values but it will still work if
+	there is only one listener, no error will be thrown.
+	Ex -
+
+		messages := make(chan string, 2) // here, creating channel of string.
+		messages <- "buffered"
+		messages <- "channel"
+
+		// Here, we have only one listener, still go will not throw error since its buffered channel.
+		fmt.Println(<-messages)
+
 */
 
 /* Syntax 1 */

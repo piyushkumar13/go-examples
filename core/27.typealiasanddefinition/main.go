@@ -11,7 +11,7 @@ One of the use case of defining type definition on primitive type is when using 
 */
 
 type mystringalias = string // this is type alias.
-type mystringdef string     // this is type definition
+type mystringdef string     // this is type definition, you can also define method for this type.
 
 func main() {
 

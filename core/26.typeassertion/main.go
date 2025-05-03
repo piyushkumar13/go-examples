@@ -15,9 +15,9 @@ func main() {
 	fmt.Println("The name is :::", nameStr)
 
 	name = 10
-	//nameStr = name.(string) // This will throw exception since trying to case integer to string.
+	//nameStr = name.(string) // This will throw exception since trying to cast integer to string.
 
-	/* Go provides a sytax while type asserting which returns a boolean when value cannot be casted instead of panicing. */
+	/* Go provides a syntax while type asserting which returns a boolean when value cannot be casted instead of panicing. */
 
 	nameInt, isString := name.(string)
 
@@ -27,7 +27,7 @@ func main() {
 		fmt.Println("Not a valid casting")
 	}
 
-	if n, s := name.(string); s { // systax where if can have assignment as well as condition check.
+	if n, s := name.(string); s { // systax where if we can have assignment as well as condition check.
 
 		fmt.Println("The name is :::", n)
 
